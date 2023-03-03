@@ -9,22 +9,43 @@
 </head>
 <body>
     <header class="header container">
-        <nav class="navigation">
+        <nav class="header__navigation">
             <ul class="header-menu">
                 <li class="header-menu__item"><a href="#">Главная</a></li>
                 <li class="header-menu__item"><a href="#">Фото и видео</a></li>
-                <li class="header-menu__item"><a href="#"><img src="/assets/imgages/logotype_desktop.svg" alt="header logo" /></li>
+                <li class="header-menu__item header-menu__item--logo">
+                    <a href="#">
+                        <img class="header__logotype-tablet" src="/assets/imgages/logotype_tablet.svg" alt="header logo" width="102" height="84" />
+                        <img class="header__logotype-desktop" src="/assets/imgages/logotype_desktop.svg" alt="header logo" width="186" height="96" />
+                        
+                    </a>
+                </li>
                 <li class="header-menu__item"><a href="#">Форма отзыва</a></li>
                 <li class="header-menu__item"><a href="#">Html academy</a></li>
             </ul>
         </nav>
-
-        <div class="header__hero">
-            <img src="/assets/imgages/hero_logo_text.svg" alt="hero text">
+        
+        <div class="header__mobile-haeder">
+            <div class="header__burger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <img class="header__logotype-mobile" src="/assets/imgages/logotype_tablet.svg" alt="header logo" width="101" height="84" />
         </div>
+        
     </header>
 
     <main class="main container">
+        <section class="intro">
+            <div class="intro__image">
+                <picture>
+                    <source media="(max-width: 320px)" srcset="assets/imgages/intro_logo_text_mobile.svg">
+                    <img src="/assets/imgages/intro_logo_text.svg" alt="intro image" width="461" height="350">
+                </picture>
+            </div>
+        </section>
+
         <section class="reasons">
             <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
             <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
@@ -33,27 +54,27 @@
                     <div class="reasons__item">
                         <h3>Настоящий городок</h3>
                         <p>— №1 — <br>
-                            Седона не аттракцион длятуристов, <br> Там течет своя жизнь
+                            Седона не аттракцион для туристов, <br> Там течет своя жизнь
                         </p>
                     </div>
                     <div class="reasons__image">
-                        <img src="/assets/imgages/photo_city_1.jpg" alt="sedona city">
+                        <img src="/assets/imgages/photo_city_1.jpg" alt="sedona city" width="800" height="256">
                     </div>
                 </div>
 
                 <div class="reasons__wrapper">
                     <div class="reasons__features">
-                        <img src="/assets/imgages/icon_house.svg" alt="house icon">
+                        <img src="/assets/imgages/icon_house.svg" alt="house icon" width="75" height="73">
                         <h3>Жилье</h3>
                         <p>Рекомендуем пожить в настоящем <br> мотеле, все как в кино!</p>
                     </div>
                     <div class="reasons__features">
-                        <img src="/assets/imgages/icon_burger.svg" alt="burger icon">
+                        <img src="/assets/imgages/icon_burger.svg" alt="burger icon" width="76" height="68">
                         <h3>Еда</h3>
                         <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, <br> Вы не разочаруетесь!</p>
                     </div>
                     <div class="reasons__features">
-                        <img src="/assets/imgages/icon_gift.svg" alt="gift icon">
+                        <img src="/assets/imgages/icon_gift.svg" alt="gift icon" width="63" height="75">
                         <h3>Сувениры</h3>
                         <p>Не только китайского, <br> но и местного производства!</p>
                     </div>
@@ -61,7 +82,7 @@
 
                 <div class="reasons__wrapper">
                     <div class="reasons__image">
-                        <img src="/assets/imgages/photo_bridge.jpg" alt="sedona bridge">
+                        <img src="/assets/imgages/photo_bridge.jpg" alt="sedona bridge" width="800" height="256">
                     </div>
                     <div class="reasons__item">
                         <h3>Там есть мост дьявола</h3>
@@ -94,11 +115,11 @@
             </div>
         </section>
 
-        <section class="search_hotels">
-            <h1>Заинтересовались?</h1>
-            <h2>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</h2>
-            <button class="">Найти гостиницу</button>
-            <iframe src="" frameborder="0"></iframe>
+        <section class="search-hotels">
+            <h2>Заинтересовались?</h2>
+            <h3>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</h3>
+            <button class="search-hotels__search-btn">Найти гостиницу</button>
+            <iframe class="search-hotels__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670269.905326549!2d-113.5990226683278!3d34.534046071933034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1677778835995!5m2!1sru!2sua" width="1200" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
 
@@ -106,18 +127,18 @@
         <div class="footer__footer-text">#visitSEDONA</div>
         <div class="footer__media-links">
             <div class="footer__media-link">
-                <img src="/assets/imgages/twitter_link.svg" alt="">
+                <img src="/assets/imgages/icon_twitter.svg" alt="" width="17" height="15">
             </div>
             <div class="footer__media-link">
-                <img src="/assets/imgages/facebook_link.svg" alt="">
+                <img src="/assets/imgages/icon_facebook.svg" alt="" width="17" height="15">
             </div>
             <div class="footer__media-link">
-                <img src="/assets/imgages/youtube_link.svg" alt="">
+                <img src="/assets/imgages/icon_youtube.svg" alt="" width="17" height="15">
             </div>
         </div>
         <div class="footer__developed">
-            <div>Разработано</div>
-            <img src="/assets/imgages/" alt="">
+            <p>Разработано</p>
+            <img src="/assets/imgages/htmlacademy.svg" alt="" width="27" height="34">
         </div>
     </footer>
 </body>
