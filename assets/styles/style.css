@@ -12,10 +12,14 @@ body {
     height: 100%;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .header {
     background-color: #ffffff; 
     height: auto;
-    box-shadow: 0px 0px 10px grey;
 }
 
 .header__logotype-tablet {
@@ -24,11 +28,6 @@ body {
 
 .header__logotype-mobile {
     display: none;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .header-menu {
@@ -69,7 +68,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 59px 0px 104px 0px;
+    padding: 77px 0px 86px 0px;
     background-image: url(/assets/imgages/hero_triangle.svg),
                       url(/assets/imgages/back_desktop.jpg);
     background-position: bottom, center;
@@ -80,7 +79,6 @@ body {
 .main {
     background-color: #ffffff; 
     height: auto;
-    box-shadow: 0px 0px 10px grey;
 }
 
 .reasons {
@@ -97,8 +95,6 @@ body {
 .reasons h3 {
     font-size: 21px;
 }
-
-
 
 .reasons p {
     font-size: 14px;
@@ -127,6 +123,10 @@ body {
     padding: 40px 32px;
 }
 
+.mobile-top-layer {
+    display: none;
+}
+
 .reasons__item--grey {
     background-color: #eeeeee;
     color: #000;
@@ -134,14 +134,13 @@ body {
 
 .reasons__features {
     width: 400px;
-    height: 320px;
+    height: 330px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 40px 32px;
 }
-
-.reasons__features h3 {}
 
 .reasons__features img {
     margin-bottom: 27px;
@@ -287,5 +286,69 @@ body {
         padding-bottom: 5px;
     }
 
+    .reasons h1 {
+        padding: 30px;
+        font-size: 18px;
+    }
+
+    .reasons p {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 30px;
+        padding: 0px 15px 0px 15px;
+    }
     
+    .reasons__info {
+        margin-top: 55px;
+    }
+    
+    .reasons__wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .reasons__item {
+        width: 320px;
+    }
+
+    .mobile-top-layer {
+        display: flex;
+        justify-content: center;
+        background-color: #81B3D2;
+    }
+
+    .reasons__features {
+        width: 320px;
+    }
+
+    .search-hotels h2 {
+        font-size: 21px;
+    }
+
+    .search-hotels__search-btn {
+        width: 280px;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer__footer-text {
+        margin: 0;
+        margin-top: 38px;
+    }
+
+    .footer__media-links {
+        margin-top: 33px;
+    }
+
+    .footer__developed {
+        margin-top: 45px;
+    }
+
+    .footer__developed img {
+        margin: 0;
+    }
 }
