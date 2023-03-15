@@ -4,66 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styles/style.css">
     <title>Sedona</title>
-    <script src="./index.js"></script>
 </head>
 <body>
     <header class="header container">
-        <ul class="header-menu">
-            <li class="header-menu__item"><a href="">Главная</a></li>
-            <li class="header-menu__item"><a href="">Фото и видео</a></li>
-            <li class="header-menu__item"><a href=""><img src="./imgages/logotype_desktop.svg.png" alt="header logo" /></li>
-            <li class="header-menu__item"><a href="">Форма отзыва</a></li>
-            <li class="header-menu__item"><a href="">Html academy</a></li>
-        </ul>
-
-        <div class="hero"> <!-- hero_bottom_layee.svg.png here -->
-            <img src="./imgages/hero_text.svg.png" alt="hero text">
+        <nav class="header__navigation">
+            <ul class="header-menu">
+                <li class="header-menu__item"><a href="#">Главная</a></li>
+                <li class="header-menu__item"><a href="#">Фото и видео</a></li>
+                <li class="header-menu__item header-menu__item--logo">
+                    <a href="#">
+                        <img class="header__logotype-tablet" src="/assets/imgages/logotype_tablet.svg" alt="header logo" width="102" height="84" />
+                        <img class="header__logotype-desktop" src="/assets/imgages/logotype_desktop.svg" alt="header logo" width="186" height="96" />
+                        
+                    </a>
+                </li>
+                <li class="header-menu__item"><a href="#">Форма отзыва</a></li>
+                <li class="header-menu__item"><a href="#">Html academy</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header__mobile-haeder">
+            <div class="header__burger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <img class="header__logotype-mobile" src="/assets/imgages/logotype_tablet.svg" alt="header logo" width="101" height="84" />
         </div>
+        
     </header>
 
     <main class="main container">
+        <section class="intro">
+            <div class="intro__image">
+                <picture>
+                    <source media="(max-width: 320px)" srcset="assets/imgages/intro_text_mobile.svg">
+                    <img src="/assets/imgages/intro_logo_text.svg" alt="intro image" width="461" height="350">
+                </picture>
+            </div>
+        </section>
+
         <section class="reasons">
-            <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-            <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
-            <div class="reasons-list">
-                <div>
-                    <div></div>
-                    <div></div>
+            <h1>Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</h1>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            <div class="reasons__info">
+                <div class="reasons__wrapper">
+                    <div class="mobile-top-layer">
+                        <img class="mobile-top-layer__img" src="/assets/imgages/mobile_top_layer.svg" width="768px" alt="layer">
+                    </div>
+                    <div class="reasons__item">
+                        <h3>Настоящий городок</h3>
+                        <p>— №1 — <br><br><br>
+                            Седона не аттракцион для туристов, <br> Там течет своя жизнь
+                        </p>
+                    </div>
+                    <div class="reasons__image">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="assets/imgages/photo-city_tablet.jpg">
+                            <img src="/assets/imgages/photo_city_1.jpg" alt="sedona city" width="800" height="256">
+                        </picture>
+                    </div>
                 </div>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+
+                <div class="reasons__wrapper">
+                    <div class="reasons__features">
+                        <img src="/assets/imgages/icon_house.svg" alt="house icon" width="75" height="73">
+                        <h3>Жилье</h3>
+                        <p>Рекомендуем пожить в настоящем <br> мотеле, все как в кино!</p>
+                    </div>
+                    <div class="reasons__features">
+                        <img src="/assets/imgages/icon_burger.svg" alt="burger icon" width="76" height="68">
+                        <h3>Еда</h3>
+                        <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, <br> Вы не разочаруетесь!</p>
+                    </div>
+                    <div class="reasons__features">
+                        <img src="/assets/imgages/icon_gift.svg" alt="gift icon" width="63" height="75">
+                        <h3>Сувениры</h3>
+                        <p>Не только китайского, <br> но и местного производства!</p>
+                    </div>
                 </div>
-                <div>
-                    <div></div>
-                    <div></div>
+
+                <div class="reasons__wrapper">
+                    <div class="reasons__image">
+                        <img src="/assets/imgages/photo_bridge.jpg" alt="sedona bridge" width="800" height="256">
+                    </div>
+                    <div class="reasons__item">
+                        <h3>Там есть мост дьявола</h3>
+                        <p>— №2 — <br><br><br>
+                            Да, по нему можно пройти! Если вы осмелитесь, конечно
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+
+                <div class="reasons__wrapper">
+                    <div class="reasons__item reasons__item--grey">
+                        <h3>Небольшая площадь</h3>
+                        <p>— №3 — <br><br><br>
+                            Все интересные места находятся очень близко
+                        </p>
+                    </div>
+                    <div class="reasons__item reasons__item--grey">
+                        <h3>Красивая дорога</h3>
+                        <p>— №4 — <br><br><br>
+                            Ехать в Седону из Лас-Вегаса совсем не скучно!
+                        </p>
+                    </div>
+                    <div class="reasons__item reasons__item--grey">
+                        <h3>Мало туристов</h3>
+                        <p>— №5 — <br><br><br>
+                            Большинство едет в гранд каньон и толпится там
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="search_hotels">
-            <h1>Заинтересовались?</h1>
-            <h2>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</h2>
-            <button>Найти гостиницу</button>
-            <div id="map"></div>
+
+        <section class="search-hotels">
+            <h2>Заинтересовались?</h2>
+            <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <button class="search-hotels__search-btn">Найти гостиницу</button>
+            <iframe class="search-hotels__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670269.905326549!2d-113.5990226683278!3d34.534046071933034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1677778835995!5m2!1sru!2sua" width="1200" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
+
     <footer class="footer container">
-        <div class="footer__footer-text"></div>
+        <p class="footer__footer-text">#visitsedona</p>
         <div class="footer__media-links">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <a href="#">
+                <div class="footer__media-link">
+                    <img src="/assets/imgages/icon_twitter.svg" alt="" width="17" height="15">
+                </div>
+            </a>
+            <a href="#">
+                <div class="footer__media-link">
+                    <img src="/assets/imgages/icon_facebook.svg" alt="" width="17" height="15">
+                </div>
+            </a>
+            <a href="#">
+                <div class="footer__media-link">
+                    <img src="/assets/imgages/icon_youtube.svg" alt="" width="17" height="15">
+                </div>
+            </a>
         </div>
         <div class="footer__developed">
-            <div>Разработано</div>
-            <img src="./" alt="./imgages/htmlacademy_logo.svg.png">
+            <p>Разработано</p>
+            <img src="/assets/imgages/htmlacademy.svg" alt="" width="27" height="34">
         </div>
     </footer>
 </body>
